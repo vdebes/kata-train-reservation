@@ -7,6 +7,8 @@ define printSection
 	@printf "\033[36m\n==================================================\033[0m\n"
 endef
 
+# Quality and testing tools
+
 .PHONY: help
 help: ## This help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(TARGETS) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
@@ -41,3 +43,20 @@ cs: ## Checks the codestyle
 cs-fix: ## Automatically fixes the code style whenever possible
 	$(call printSection,CODE STYLE FIXING)
 	vendor/bin/phpcbf
+
+# External services
+
+.PHONY: booking
+booking: ## Start booking reference service
+	python3 _services/booking_reference.py
+
+.PHONY: train_data
+train_data: ## Start train data service
+	python3 _services/start_train_data.py
+
+.PHONY: services-start
+services-start: booking train_data ## Start all dependency services
+
+.PHONY: test
+test: ## Launch the guiding test
+	python3 -m unittest _services/guiding_test.py
