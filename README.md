@@ -1,5 +1,5 @@
 # kata-train-reservation
-[![Build Status](https://travis-ci.org/vdebes/kata-train-reservation.svg?branch=master)](https://travis-ci.org/vdebes/kata-train-reservation)
+[![Build Status](https://api.travis-ci.org/vdebes/kata-train-reservation.svg?branch=master)](https://travis-ci.org/vdebes/kata-train-reservation)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/d3212371239a59fae1e4/test_coverage)](https://codeclimate.com/github/vdebes/kata-train-reservation/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/d3212371239a59fae1e4/maintainability)](https://codeclimate.com/github/vdebes/kata-train-reservation/maintainability)
 
