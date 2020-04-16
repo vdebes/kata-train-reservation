@@ -14,7 +14,7 @@ Our API will call external services. They are all in [_services/](/_services) di
 
 You will need Python3 and to start them using 
 ```
-make services-start
+make services-start -j2
 ``` 
 
 Once the services have started, here are some usefull routes :
