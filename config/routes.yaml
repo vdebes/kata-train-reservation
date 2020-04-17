@@ -1,3 +1,6 @@
-index:
+status:
     path: /status
     controller: App\Infrastructure\Controller\StatusController
+booking:
+    path: /booking
+    controller: App\Infrastructure\Controller\BookingController
