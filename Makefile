@@ -16,7 +16,7 @@ help: ## This help
 .PHONY: unit
 unit: ## Runs unit tests
 	$(call printSection,PHP UNIT)
-	vendor/bin/phpunit tests
+	bin/phpunit tests
 
 .PHONY: static
 static: ## Runs static analysis
