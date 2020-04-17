@@ -2,6 +2,6 @@ parameters:
     level: 7
     paths:
         - src
-        - tests
+#        - tests
     autoload_files:
         - %rootDir%/../../autoload.php
