@@ -3,9 +3,10 @@
 namespace App\Infrastructure\Controller;
 
 use App\Domain\BookingRepository;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 
-class BookingController
+class DefaultController
 {
     /** @var BookingRepository */
     private $repository;
@@ -19,6 +20,6 @@ class BookingController
     {
         $booking = $this->repository->generateBooking();
 
-        return new Response("ok");
+        return new JsonResponse($booking->__toArray());
     }
 }

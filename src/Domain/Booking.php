@@ -6,10 +6,7 @@ namespace App\Domain;
 
 class Booking
 {
-
-    /**
-     * @var string
-     */
+    /** @var string */
     private $uid;
 
     private $isConfirmed = false;
@@ -22,5 +19,13 @@ class Booking
     public function isConfirmed(): bool
     {
         return $this->isConfirmed;
+    }
+
+    public function __toArray()
+    {
+        return [
+            'uid' => $this->uid,
+            'confirmed' => (int) $this->isConfirmed
+        ];
     }
 }

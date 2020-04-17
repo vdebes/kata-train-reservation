@@ -3,9 +3,9 @@
 namespace App\Infrastructure;
 
 use App\Domain\Booking;
-use App\Domain\BookingRepository as Repository;
+use App\Domain\BookingRepository;
 
-class BookingRepository implements Repository
+class HttpBookingRepository implements BookingRepository
 {
     /** @var HttpClient */
     private $client;
