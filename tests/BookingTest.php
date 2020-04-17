@@ -2,7 +2,7 @@
 
 namespace App\tests;
 
-use App\Booking;
+use App\Domain\Booking;
 use PHPUnit\Framework\TestCase;
 
 class BookingTest extends TestCase
