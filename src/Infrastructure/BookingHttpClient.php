@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Domain;
+namespace App\Infrastructure;
 
-class Desk
+use App\Domain\Booking;
+
+class BookingHttpClient
 {
-
     public function getBooking(string $trainId): Booking
     {
         return new Booking($trainId);
