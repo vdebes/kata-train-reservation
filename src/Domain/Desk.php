@@ -4,8 +4,8 @@ namespace App\Domain;
 
 class Desk
 {
-    public function openBooking()
+    public function openBooking(string $trainId): Booking
     {
-        return new Booking();
+        return new Booking($trainId);
     }
 }
