@@ -19,6 +19,6 @@ class DefaultController
     {
         $newBooking = $this->commandBus->handle(new OpenBooking('express2000'));
 
-        return new JsonResponse(['OK']);
+        return new JsonResponse($newBooking->getTrainId());
     }
 }

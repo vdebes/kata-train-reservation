@@ -6,7 +6,7 @@ use App\Domain\Booking;
 
 class OpenBookingHandler
 {
-    public function __invoke(OpenBooking $openBooking)
+    public function handle(OpenBooking $openBooking)
     {
         return new Booking($openBooking->getTrainId());
     }
