@@ -6,8 +6,8 @@ use App\Domain\Booking;
 
 class OpenBookingHandler
 {
-    public function handle(OpenBooking $openBooking)
+    public function handle(OpenBookingCommand $openBooking)
     {
-        return new Booking($openBooking->getTrainId());
+        return $openBooking->getBookingId();
     }
 }
