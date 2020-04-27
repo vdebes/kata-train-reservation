@@ -7,7 +7,7 @@ use App\Domain\Desk;
 use App\Infrastructure\BookingHttpClient;
 use PHPUnit\Framework\TestCase;
 
-class DeskTest extends TestCase
+class OpenBookingTest extends TestCase
 {
     public function testBooking(): void
     {

@@ -2,19 +2,23 @@
 
 namespace App\Infrastructure\Controller;
 
+use App\Application\OpenBooking;
+use League\Tactician\CommandBus;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController
 {
+    private $commandBus;
 
-    public function __construct()
+    public function __construct(CommandBus $commandBus)
     {
+        $this->commandBus = $commandBus;
     }
 
     public function __invoke()
     {
-        // 
-        return new JsonResponse([]);
+        $newBooking = $this->commandBus->handle(new OpenBooking('express2000'));
+
+        return new JsonResponse(['OK']);
     }
 }
