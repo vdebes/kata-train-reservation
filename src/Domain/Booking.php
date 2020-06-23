@@ -7,4 +7,11 @@ namespace App\Domain;
 class Booking
 {
 
+    /** @var string*/
+    private $id;
+
+    public function __construct(string $id)
+    {
+        $this->id = $id;
+    }
 }
