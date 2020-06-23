@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Domain;
+namespace App\Application;
+
+use App\Domain\Booking;
 
 interface ProvideBooking
 {

@@ -2,13 +2,12 @@
 
 namespace App\Infrastructure\Controller;
 
-use App\Domain\Booking;
-use App\Domain\ProvideBooking;
+use App\Application\ProvideBooking;
 use Symfony\Component\HttpFoundation\Response;
 
 class BookingController
 {
-    /** @var ProvideBooking $provideBooking */
+    /** @var \App\Application\ProvideBooking $provideBooking */
     private $provideBooking;
 
     public function __construct(ProvideBooking $provideBooking)
@@ -20,6 +19,6 @@ class BookingController
     {
         $booking = $this->provideBooking->provide();
 
-        return new Response($booking->bookingNumber);
+        return new Response($booking->getId());
     }
 }

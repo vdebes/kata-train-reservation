@@ -1,6 +1,9 @@
 <?php
 
-namespace App\Domain;
+namespace App\Application\Providers;
+
+use App\Domain\Booking;
+use App\Application\ProvideBooking;
 
 class SimpleProvideBooking implements ProvideBooking
 {
