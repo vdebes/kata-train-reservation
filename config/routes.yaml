@@ -1,3 +1,8 @@
 index:
     path: /status
     controller: App\Infrastructure\Controller\StatusController
+
+booking:
+    path: /booking
+    methods: POST
+    controller: App\Infrastructure\Controller\BookingController
