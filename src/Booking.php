@@ -4,7 +4,11 @@ namespace App;
 
 class Booking
 {
-    public function __construct()
+    /** @var int */
+    private $seatsCount;
+
+    public function __construct(int $seatsCount)
     {
+        $this->seatsCount = $seatsCount;
     }
 }
