@@ -3,5 +3,4 @@ parameters:
     paths:
         - src
         - tests
-    autoload_files:
-        - %rootDir%/../../autoload.php
+

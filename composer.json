@@ -13,12 +13,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "vdebes\\phpboilerplate\\": "src"
+            "App\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "phpboilerplate\\tests\\": "tests"
+            "App\\Test\\": "tests"
         }
     },
     "require": {

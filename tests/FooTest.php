@@ -1,9 +1,9 @@
 <?php
 
-namespace phpboilerplate\tests;
+namespace App\Test;
 
+use App\Foo;
 use PHPUnit\Framework\TestCase;
-use vdebes\phpboilerplate\Foo;
 
 class FooTest extends TestCase
 {

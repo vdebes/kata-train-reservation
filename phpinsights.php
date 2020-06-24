@@ -52,9 +52,7 @@ return [
     |
     */
 
-    'exclude' => [
-        //  'path/to/directory-or-file'
-    ],
+    'exclude' => ['vendor/', 'var/cache'],
 
     'add' => [
         //  ExampleMetric::class => [

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace vdebes\phpboilerplate;
+namespace App;
 
 class Foo
 {
